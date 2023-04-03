@@ -28,9 +28,30 @@
       data-offset-top="0"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <!-- <a class="navbar-brand" href="#"
           ><img src="assets/imgs/logo.svg" alt=""
-        /></a>
+        /></a> -->
+        <a class="navbar-brand" href="#"
+          ><span style="display: flex; align-items: center; gap: 2px"
+            ><span
+              style="
+                font-weight: bold;
+                font-size: 3em;
+                font-family: 'Courier New', Courier, monospace;
+                color: #ff3d0b;
+              "
+              >J</span
+            >
+            <span
+              style="
+                font-size: 1.5em;
+                font-family: 'Courier New', Courier, monospace;
+                letter-spacing: 3px;
+              "
+              >ewel</span
+            ></span
+          ></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -69,10 +90,7 @@
                 action="assets/files/Jewel-Elias-CV.pdf"
                 style="display: inline-block"
               >
-                <button
-                  class="- btn btn-primary rounded ml-4"
-                  type="submit"
-                >
+                <button class="- btn btn-primary rounded ml-4" type="submit">
                   Download CV
                 </button>
               </form>
@@ -240,19 +258,19 @@
         </p>
 
         <div class="row text-left">
-          <div class="col-sm-6">
-            <h6 class="mb-3">Reactjs</h6>
+          <div class="col-sm-3">
+            <h6 class="mb-3">React.js</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
-            <h6 class="mb-3">Reactjs</h6>
+          <div class="col-sm-3">
+            <h6 class="mb-3">Next.js</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">CSS / SASS</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">Bootstrap</h6>
             <hr class="hr hr-blurry bg-primary" />
             <!-- <div
@@ -267,36 +285,52 @@
               </div> -->
             <!-- </div> -->
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">HTML</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">Axios</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">Redux</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">Github / Gitlab</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <h6 class="mb-3">JavaScript / Typescript</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
-            <h6 class="mb-3">Unit test</h6>
+          <div class="col-sm-3">
+            <h6 class="mb-3">Unit test (Jest)</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
-            <h6 class="mb-3">Jest</h6>
+          <div class="col-sm-3">
+            <h6 class="mb-3">Material UI</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
+            <h6 class="mb-3">SEO principles</h6>
+            <hr class="hr hr-blurry bg-primary" />
+          </div>
+          <div class="col-sm-3">
+            <h6 class="mb-3">Figma</h6>
+            <hr class="hr hr-blurry bg-primary" />
+          </div>
+          <div class="col-sm-3">
+            <h6 class="mb-3">Adobe XD</h6>
+            <hr class="hr hr-blurry bg-primary" />
+          </div>
+          <div class="col-sm-3">
             <h6 class="mb-3">C++</h6>
+            <hr class="hr hr-blurry bg-primary" />
+          </div>
+          <div class="col-sm-3">
+            <h6 class="mb-3">Java</h6>
             <hr class="hr hr-blurry bg-primary" />
           </div>
         </div>
@@ -438,7 +472,11 @@
           <div class="form">
             <h6 class="subtitle">Available 24/24</h6>
             <h6 class="section-title mb-4">Get In Touch</h6>
-            <form>
+            <form
+              action="mailto:jewel.elias9@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
               <div class="form-group">
                 <input
                   type="email"
@@ -446,6 +484,7 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
+                  name="email"
                   required
                 />
               </div>
@@ -455,6 +494,7 @@
                   class="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
+                  name="Password"
                   required
                 />
               </div>
@@ -466,6 +506,7 @@
                   rows="5"
                   class="form-control"
                   placeholder="Message"
+                  name="Message"
                 ></textarea>
               </div>
               <button
